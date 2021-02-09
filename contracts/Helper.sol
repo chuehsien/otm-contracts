@@ -182,7 +182,7 @@ abstract contract Helper is Timing {
 
     function _preparePath(
         address _tokenAddress,
-        address _wiseAddress
+        address _otmAddress
     )
         internal
         pure
@@ -191,7 +191,7 @@ abstract contract Helper is Timing {
         _path = new address[](3);
         _path[0] = _tokenAddress;
         _path[1] = WETH;
-        _path[2] = _wiseAddress;
+        _path[2] = _otmAddress;
     }
 
     function safeTransfer(
